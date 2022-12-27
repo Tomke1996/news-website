@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+    <div class="navigation">
+        <a href="" class="logo">API | News</a>
+        <!-- Search Input -->
+        <div class="search-box">
+            <form>
+                <input id="newsInput" type="text" placeholder="Search..">
+                <button id="search" type="button"><i class="fas fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <!-- Nav Menu -->
+        <nav>
+            <ul>
+                <li><a href="#general" id="general">General</a></li>
+                <li><a href="#sports" id="sports">Sports</a></li>
+                <li><a href="#business" id="business">Business</a></li>
+                <li><a href="#technology" id="technology">Technology</a></li>
+                <li><a href="#health" id="health">Health</a></li>
+            </ul>
+        </nav>
+        <button class="menu-icon"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+
+    <!-- News -->
+    <div class="news">
+        <div class="newsType" id="newsType">
+            <h4 id="typeHeading"></h4>
+        </div>
+        <div class="newsDetails" id="newsDetails"><div class="col"></div></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
